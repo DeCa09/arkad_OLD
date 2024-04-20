@@ -4,5 +4,5 @@ fn main() {
     let x = 5;
     let y = add_one(x);
 
-    println!("x + 1 = {x} + 1 = {y}");
+    println!("x + 1 = {x} + 1 = {y} ");
 }
