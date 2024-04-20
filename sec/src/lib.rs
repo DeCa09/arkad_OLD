@@ -2,6 +2,10 @@ pub fn add_one(number: i32) -> i32 {
     number + 1
 }
 
+pub mod ingestion;
+pub mod parser;
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
