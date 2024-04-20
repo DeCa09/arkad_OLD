@@ -1,0 +1,4 @@
+version: '3'
+services:
+  rust_environment:
+    image: rust:1.74-alpine3.17
