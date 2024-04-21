@@ -1,8 +1,7 @@
+use sec::ingestion::ingest_document;
 use sec::parser::parse_documents;
-use sec::ingestion::{retrieve_documents, store_documents};
 
-fn main(){
+fn main() {
     parse_documents();
-    retrieve_documents();
-    store_documents();
+    ingest_document();
 }

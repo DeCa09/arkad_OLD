@@ -1,14 +1,10 @@
 pub mod retrieval;
 pub mod storage;
 
-use retrieval::get_user_agent;
+use retrieval::retrieve_document;
 use storage::store_to_disk;
 
-pub fn retrieve_documents(){
-    println!("I retrieved something!");
-    println!("Here is the User Agent we use for retrieval: {}", get_user_agent());
-}
-
-pub fn store_documents(){
+pub fn ingest_document() {
+    retrieve_document();
     store_to_disk();
 }
