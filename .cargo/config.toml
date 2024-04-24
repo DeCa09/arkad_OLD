@@ -1,8 +1,10 @@
 [env]
-CC = { value = "zig cc -target aarch64-linux-musl", force = true }
+# CC = { value = "zig cc -target aarch64-linux-musl", force = true }
 
 # Set even if already present in environment
-# CC = { value = "zig cc -static -target x86_64-linux-musl", force = true }
+#CC = { value = "zig cc -static -target x86_64-linux-musl", force = true }
+# LD_LIBRARY_PATH = { value = "/usr/local/zig/lib/libc/musl/", force = true }
+#LIBRARY_PATH = { value = "/usr/local/zig/lib/libc/musl/", force = true }
 
-[target.aarch64-unknown-linux-musl]
-linker = "/app/.cargo/zig_wrapper_aarch64_linux_musl.sh"
+#[target.aarch64-unknown-linux-musl]
+#linker = "/app/.cargo/zig_wrapper_aarch64_linux_musl.sh"
